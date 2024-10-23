@@ -9,40 +9,123 @@
   <script src="https://kit.fontawesome.com/a835322af7.js" crossorigin="anonymous"></script>
 
 </head>
-     
-<body >
-  
-   <main class="ml-56">
-       <div class="bg-[#10243D] w-full h-[600px] flex ">
-         <div class="flex flex-col">
-          <span class="text-white text-3xl mx-20 mt-5">Section</span>
-          <span class="text-white text-5xl mt-20 mx-32">About Sliding</span>
-          <span class="text-white text-5xl mx-32">Content</span>
-          <span class="text-white text-2xl mx-32 mt-5">About sliding content</span>
-          <button type="button" class="bg-white flex w-[500px] h-20 mx-24 mt-14 items-center justify-center space-x-24 rounded-full">
-            <span class="text-black flex flex-col text-xl">
-              <span>Search Apps,Games,</span>
-              <span>Movies,Musics,Books</span>
-            </span>
-            <span class="bg-[#10243D] text-white text-xl  w-32 h-10  rounded-full flex justify-center items-center">Search</span>
-          </button>
-         </div>
-         <div class="flex w-40 justify-evenly  items-center"></div>
-            <div class="flex flex-col space-y-10  mx-14 mt-14" style="animation: marquee 10s  linear infinite;">
-               <div class="bg-white text-black w-20 h-20 rounded-2xl">app</div>
-               <div class="bg-white text-black w-20 h-20 rounded-2xl">app</div>
-               <div class="bg-white text-black w-20 h-20 rounded-2xl">app</div>
-               <div class="bg-white text-black w-20 h-20 rounded-2xl">app</div>
-            </div>
-            <div class="absolute w-full h-full flex ticker-container">
-              <div class="ticker-item bg-red-500 text-white flex items-center justify-center">News Item 1</div>
-              <div class="ticker-item bg-green-500 text-white flex items-center justify-center">News Item 2</div>
-              <div class="ticker-item bg-blue-500 text-white flex items-center justify-center">News Item 3</div>
-              <div class="ticker-item bg-yellow-500 text-white flex items-center justify-center">News Item 4</div>
-              <div class="ticker-item bg-purple-500 text-white flex items-center justify-center">News Item 5</div>
-            </div>
-         </div>
-       </div>
-   </main>
+
+<body>
+  <main class="flex">
+        <!-- smaller header -->
+        <div class="smaller-header  bg-bl text-white shadow shadow-white flex flex-col justify-between items-center w-24 h-screen p-2 group">
+          <nav>
+              <div class="logo flex justify-center items-center p-3">
+                  <img class="w-24 rounded-full" src="/images/web-mart-logo.svg" alt="WM">
+              </div>
+              
+              <hr class="m-2" />
+              
+              <div class="flex flex-col justify-between items-center">
+                  <a class="m-3" href="/register"><i class="text-xl hover:text-[var(--logo)] fa-solid fa-user"></i></a>
+                  
+                  <hr class="px-8 m-2" />
+                  
+                  <a class="m-3" href="/"><i class="text-xl hover:text-[var(--logo)] fa-solid fa-house"></i></a>
+                  <a class="m-3" href="/apps"><i class="text-xl hover:text-[var(--logo)] fa-solid fa-puzzle-piece"></i></a>
+                  <a class="m-3" href="/games"><i class="text-xl hover:text-[var(--logo)] fa-solid fa-gamepad"></i></a>
+                  <a class="m-3" href="/movies"><i class="text-xl hover:text-[var(--logo)] fa-solid fa-film"></i></a>
+                  <a class="m-3" href="/books"><i class="text-xl hover:text-[var(--logo)] fa-solid fa-book"></i></a>
+                  <a class="m-3" href="/music"><i class="text-xl hover:text-[var(--logo)] fa-solid fa-music"></i></a>
+              </div>
+          </nav>
+          
+          <nav class="flex flex-col justify-between items-center">
+              <hr class="px-8 m-2" />
+
+              <a class="p-3" href=""><i class="text-xl hover:text-[var(--logo)] fa-solid fa-question"></i></a>
+              <a class="p-3" href=""><i class="text-xl hover:text-[var(--logo)] fa-solid fa-gear"></i></a>
+              <a class="p-3" href="/logout"><i class="text-xl hover:text-[var(--logo)] fa-solid fa-right-from-bracket"></i></a>
+          </nav>
+      </div>
+
+      <!-- bigger header -->
+      <div class="bigger-header  bg-black text-white shadow shadow-white  justify-between items-center w-56 h-screen p-2 flex flex-col hidden group-hover:block !important">
+          <nav>
+              <div class="logo flex justify-center items-center p-3">
+                  <img class="logo-img w-10 rounded-full" src="/images/web-mart-logo.svg" alt="WM">
+                  <h2 class="text-xl font-bold ms-2">Web <span class="text-[var(--logo)]">Mart</span></h2>
+              </div>
+              
+              <hr class="m-2" />
+              
+              <div class="flex flex-col justify-between items-center">
+                  <a class="flex justify-around items-center text-lg hover:text-[var(--logo)] m-3 w-full" href="/register">
+                      <i class="ms-5 fa-solid fa-user"></i>
+                      <span class="w-24">Account</span>
+                  </a>
+                  
+                  <hr class="px-24 m-2" />
+                  
+                  <a class="flex justify-around items-center text-lg hover:text-[var(--logo)] m-3 w-full" href="/">
+                      <i class="ms-5 fa-solid fa-house"></i>
+                      <span class="w-24">Home</span>
+                  </a>
+                  <a class="flex justify-around items-center text-lg hover:text-[var(--logo)] m-3 w-full" href="/apps">
+                      <i class="ms-5 fa-solid fa-puzzle-piece"></i>
+                      <span class="w-24">Apps</span>
+                  </a>
+                  <a class="flex justify-around items-center text-lg hover:text-[var(--logo)] m-3 w-full" href="/games">
+                      <i class="ms-5 fa-solid fa-gamepad"></i>
+                      <span class="w-24">Games</span>
+                  </a>
+                  <a class="flex justify-around items-center text-lg hover:text-[var(--logo)] m-3 w-full" href="/movies">
+                      <i class="ms-5 fa-solid fa-film"></i>
+                      <span class="w-24">Movies</span>
+                  </a>
+                  <a class="flex justify-around items-center text-lg hover:text-[var(--logo)] m-3 w-full" href="/books">
+                      <i class="ms-5 fa-solid fa-book"></i>
+                      <span class="w-24">Books</span>
+                  </a>
+                  <a class="flex justify-around items-center text-lg hover:text-[var(--logo)] m-3 w-full" href="/music">
+                      <i class="ms-5 fa-solid fa-music"></i>
+                      <span class="w-24">Music</span>
+                  </a>
+              </div>
+          </nav>
+          
+          <nav>
+              <div class="flex flex-col justify-between items-center p-3">
+                  <hr class="px-24 m-2" />
+
+                  <a class="flex justify-around items-center text-lg hover:text-[var(--logo)] m-3 w-full" href="">
+                      <i class="ms-5 fa-solid fa-question"></i>
+                      <span class="w-24">Help</span>
+                  </a>
+                  <a class="flex justify-around items-center text-lg hover:text-[var(--logo)] m-3 w-full" href="">
+                      <i class="ms-5 fa-solid fa-gear"></i>
+                      <span class="w-24">Settings</span>
+                  </a>
+                  <a class="flex justify-around items-center text-lg hover:text-[var(--logo)] m-3 w-full" href="/logout">
+                      <i class="ms-5 fa-solid fa-right-from-bracket"></i>
+                      <span class="w-24">Logout</span>
+                  </a>
+              </div>
+          </nav>
+      </div>
+    <div class="bg-[#10243D] w-full h-[600px] flex ">
+      <div class="flex flex-col">
+        <span class="text-white text-3xl mx-20 mt-5">Section</span>
+        <span class="text-white text-5xl mt-20 mx-32">About Sliding</span>
+        <span class="text-white text-5xl mx-32">Content</span>
+        <span class="text-white text-2xl mx-32 mt-5">About sliding content</span>
+        <input type="search" placeholder="Search Apps,Games,Movies,Musics,Books"
+          class="bg-white flex w-[500px] h-20 mx-24 mt-14 px-4 text-2xl text-black rounded-full ">
+        </input>
+      </div>
+      <div class="flex w-40 justify-evenly  items-center"></div>
+      <div class="flex flex-col space-y-10  mx-14 mt-14" style="animation: marquee 10s  linear infinite;">
+
+        <div class="absolute w-full h-full flex ticker-container">
+
+        </div>
+      </div>
+  </main>
 </body>
+
 </html>
